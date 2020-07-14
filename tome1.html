@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5df773c797884da2ac09aa7a0e361d69 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5df773c797884da2ac09aa7a0e361d69" ></div>
+        
+</body>
+<script>    
+    
+            var map_5df773c797884da2ac09aa7a0e361d69 = L.map(
+                "map_5df773c797884da2ac09aa7a0e361d69",
+                {
+                    center: [48.853, 2.348],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8b1f62269c464159a792c0dfb6c86119 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5df773c797884da2ac09aa7a0e361d69);
+        
+    
+            var marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513 = L.markerClusterGroup(
+                {}
+            );
+            map_5df773c797884da2ac09aa7a0e361d69.addLayer(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+            var marker_713e58f524654643a50342bb45c42e9c = L.marker(
+                [48.85353, 2.34819],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_b8321c3e75ec4d4daf9436b9bc5192c4 = L.popup({"maxWidth": 400});
+
+        
+            var html_5e2a347516f24397985086ba138369ec = $(`<div id="html_5e2a347516f24397985086ba138369ec" style="width: 100.0%; height: 100.0%;">— Je ne peux rien faire sans cela, poursuivit-elle. Obtenez-les, et je vous promets bien, alors, de me rendre aussitôt à <i style="background-color: yellow;">Paris</i> sous un quelconque prétexte, pour y faire cesser ce désordre. En quoi puis-je vous aider ? Avez-vous prévenu mon oncle Valois ?<br>L’époque était à la construction, et les princes rivalisaient sur ce point. Ce qui se faisait à Westminster était, à <i style="background-color: yellow;">Paris</i>, déjà terminé.<br>Au bout de trois cents pas, les voyageurs tournèrent à gauche dans Lombard Street, où toutes les banques italiennes avaient leur établissement. Maisons de peu de mine sur l’extérieur, à un étage, deux au plus, mais fort bien entretenues, avec des portes cirées et des grilles aux fenêtres. Le signor Boccace laissa Guccio devant la banque Albizzi. Les deux compagnons de route se séparèrent avec beaucoup de chaleur, se félicitèrent mutuellement de leur amitié naissante, et se promirent de se revoir très vite, à <i style="background-color: yellow;">Paris</i>.<br>— Retournez-vous à <i style="background-color: yellow;">Paris</i> ? murmura-t-elle.<br>Il connaissait, à <i style="background-color: yellow;">Paris</i>, deux femmes de marchands, jolies bourgeoises de vingt ans, qui ne lui étaient pas cruelles. Au bout de quelques jours, il avait oublié sa conquête de Neauphle.<br>— J’ai laissé mon aumônière à <i style="background-color: yellow;">Paris</i>, dit Jeanne.<br>— Puisque ces aumônières sont à <i style="background-color: yellow;">Paris</i>, nous enverrons deux écuyers les prendre sur-le-champ.<br>— Ma tante, reprit Robert, j’ai fait en pleine nuit les dix lieues de Pontoise à <i style="background-color: yellow;">Paris</i> pour venir vous avertir, car personne ne songeait à le faire. Croyez-vous encore que ce soient de mauvais sentiments qui m’amènent ?<br>Souvent, il partait pour l’une de ses résidences de campagne, où il suivait de longues chasses, sa seule distraction apparente. Mais il était vite rappelé à <i style="background-color: yellow;">Paris</i> par des rapports alarmants. La situation alimentaire, dans le royaume, était mauvaise. Le coût des vivres augmentait ; les régions prospères n’acceptaient pas de diriger leurs excédents vers les régions pauvres. On disait volontiers : « Trop de sergents, et pas assez de froment. » On refusait de payer les impôts, et l’on se révoltait contre les prévôts et les receveurs de finances. À la faveur de cette crise, les ligues de barons, en Bourgogne et en Champagne, se reconstituaient pour soutenir de vieilles prétentions féodales. Robert d’Artois, mettant à profit le scandale des princesses royales et le mécontentement général, recommençait à fomenter des troubles sur les terres de la comtesse Mahaut.<br>Marigny, contre l’avis de Charles de Valois, fit alors convoquer une assemblée populaire pour le 1er août 1314, à <i style="background-color: yellow;">Paris</i>. Il avait déjà eu recours à de pareilles consultations, mais surtout à l’occasion des conflits avec la papauté. C’était en aidant le pouvoir royal à se dégager de l’obédience au Saint-Siège que la bourgeoisie avait conquis son droit de parole. Maintenant, on demandait son approbation en matière de finances.<br>— Non, Monseigneur, répondit-il. Je subirai le sort qui sera fait à tous. Je ne veux point recommencer ailleurs, et n’ai point de raison de le faire. Je suis de France, maintenant, autant que vous l’êtes. Je suis bourgeois du roi. Je veux rester dans cette maison que j’ai construite, à <i style="background-color: yellow;">Paris</i>. J’y ai passé trente-deux ans de ma vie, Monseigneur, et, si Dieu veut, c’est ici que ma vie s’achèvera… Du reste, ajouta-t-il, eussé-je le désir de vous restituer la décharge, je ne le pourrais pas ; je ne l’ai plus en main.<br>Le jeune homme dut donc annoncer qu’une affaire importante le rappelait à <i style="background-color: yellow;">Paris</i>. Dame Eliabel, Pierre et Jean montrèrent de vifs regrets. Marie ne dit rien et continua l’ouvrage de broderie auquel elle était occupée. Mais, lorsqu’elle fut seule avec Guccio, elle laissa paraître son angoisse. Était-il arrivé un malheur ? Guccio était-il menacé ?</div>`)[0];
+            popup_b8321c3e75ec4d4daf9436b9bc5192c4.setContent(html_5e2a347516f24397985086ba138369ec);
+        
+
+        marker_713e58f524654643a50342bb45c42e9c.bindPopup(popup_b8321c3e75ec4d4daf9436b9bc5192c4)
+        ;
+
+        
+    
+    
+            marker_713e58f524654643a50342bb45c42e9c.bindTooltip(
+                `<div>
+                     Paris
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_162d6e477a134d59abdf80d209be4c28 = L.marker(
+                [48.8529, 2.35007],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_aff06bd1868144eb95c0b27d5358ff47 = L.popup({"maxWidth": 400});
+
+        
+            var html_39336eeae50c40628afb00fe9df98211 = $(`<div id="html_39336eeae50c40628afb00fe9df98211" style="width: 100.0%; height: 100.0%;">— Je l’ignore, messire ; j’ai ordre de vous conduire à <i style="background-color: yellow;">Notre-Dame</i> pour en entendre lecture.<br>Dehors, le bourdon de <i style="background-color: yellow;">Notre-Dame</i> s’était tu, et il régnait sur rue de la Cité un silence inhabituel, impressionnant. Que se passait-il à <i style="background-color: yellow;">Notre-Dame</i> ?<br>Tandis que le prévôt lui expliquait ce qui s’était passé à <i style="background-color: yellow;">Notre-Dame</i>, Philippe le Bel avait continué de s’intéresser aux trois lévriers, de leur relever les babines pour examiner leurs crocs blancs et leur gueule noire, de palper leur poitrine profonde au pelage couleur de sable. Des bêtes directement importées d’Orient, sans aucun doute.<br>Il continua en léguant à diverses églises, à <i style="background-color: yellow;">Notre-Dame</i> de Boulogne, parce que sa fille s’y était mariée, à Saint-Martin de Tours, à Saint-Denis, des fleurs de lis d’or, « d’un prix de mille livres », précisa-t-il pour chacune.</div>`)[0];
+            popup_aff06bd1868144eb95c0b27d5358ff47.setContent(html_39336eeae50c40628afb00fe9df98211);
+        
+
+        marker_162d6e477a134d59abdf80d209be4c28.bindPopup(popup_aff06bd1868144eb95c0b27d5358ff47)
+        ;
+
+        
+    
+    
+            marker_162d6e477a134d59abdf80d209be4c28.bindTooltip(
+                `<div>
+                     Notre-Dame
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75abd7773b754a3b89622778f83871bb = L.marker(
+                [47.092, 5.4932],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_5f1c370a7f77454e816cf8cea761b759 = L.popup({"maxWidth": 400});
+
+        
+            var html_d3797b8521cb46dd9cc9fcc56930a60c = $(`<div id="html_d3797b8521cb46dd9cc9fcc56930a60c" style="width: 100.0%; height: 100.0%;">— Eh bien ! rassurez Marguerite, et rassurez-vous, Blanche. Mes fils Louis et Charles pourront vous tenir compagnie ce soir. Aujourd’hui est une bonne journée pour le royaume, dit Philippe le Bel. Il n’y aura pas conseil ce soir. Quant à votre époux, Jeanne, qui est allé à <i style="background-color: yellow;">Dole</i> et à Salins veiller aux affaires de votre comté, je ne pense pas qu’il demeure encore absent plus d’une semaine.</div>`)[0];
+            popup_5f1c370a7f77454e816cf8cea761b759.setContent(html_d3797b8521cb46dd9cc9fcc56930a60c);
+        
+
+        marker_75abd7773b754a3b89622778f83871bb.bindPopup(popup_5f1c370a7f77454e816cf8cea761b759)
+        ;
+
+        
+    
+    
+            marker_75abd7773b754a3b89622778f83871bb.bindTooltip(
+                `<div>
+                     Dole
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a40848be15ea481492e0be3496496e04 = L.marker(
+                [51.7521, -1.2584],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_0fe5f55664554f9ca6b500242556a424 = L.popup({"maxWidth": 400});
+
+        
+            var html_8ed14b1299a942148e6b6d3d44a2ceb4 = $(`<div id="html_8ed14b1299a942148e6b6d3d44a2ceb4" style="width: 100.0%; height: 100.0%;">— Les barons et moi, l’autre année, sommes parvenus à abattre Gaveston ; il a eu la tête tranchée et je me réjouissais que son corps fût à pourrir chez les dominicains, à <i style="background-color: yellow;">Oxford</i>. Eh bien ! J’en arrive, mon cousin, à regretter le chevalier de Gaveston, car, depuis, comme pour se venger de moi, Édouard attire au palais tout ce qu’il y a de plus bas et de plus infâme dans les hommes de son peuple. On le voit courir les bouges du port de Londres, s’asseoir avec les truands, rivaliser à la lutte avec les débardeurs, et à la course avec les palefreniers. Les beaux tournois, en vérité, qu’il nous donne là ! Pendant ce temps, commande qui veut son royaume, pourvu qu’on organise ses plaisirs et qu’on les partage. Pour l’heure, ce sont les barons Despenser qui ont sa faveur, le père gouvernant le fils, qui sert de femme à mon époux. Quant à moi, Édouard ne m’approche plus, et s’il lui arrive de s’aventurer dans ma couche, j’en éprouve une telle honte que j’en reste toute froide.</div>`)[0];
+            popup_0fe5f55664554f9ca6b500242556a424.setContent(html_8ed14b1299a942148e6b6d3d44a2ceb4);
+        
+
+        marker_a40848be15ea481492e0be3496496e04.bindPopup(popup_0fe5f55664554f9ca6b500242556a424)
+        ;
+
+        
+    
+    
+            marker_a40848be15ea481492e0be3496496e04.bindTooltip(
+                `<div>
+                     Oxford
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a523634238a64c109c90923aff32ba33 = L.marker(
+                [32.927778, 35.081667],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_ce24e206ad04492bbb3b7350f037b049 = L.popup({"maxWidth": 400});
+
+        
+            var html_530542b47f8a4e41905f41a3b1bd14fa = $(`<div id="html_530542b47f8a4e41905f41a3b1bd14fa" style="width: 100.0%; height: 100.0%;">Les prisonniers furent poussés vers le chariot. Molay y monta le premier. Le commandeur d’Aquitaine, l’homme qui avait repoussé les Turcs à <i style="background-color: yellow;">Saint-Jean</i>-d’Acre, semblait frappé d’hébétude. Il fallut le hisser. Le visiteur général remuait les lèvres, sans arrêt. Lorsque Geoffroy de Charnay grimpa à son tour dans la voiture, un chien invisible se mit à hurler, quelque part du côté des écuries.</div>`)[0];
+            popup_ce24e206ad04492bbb3b7350f037b049.setContent(html_530542b47f8a4e41905f41a3b1bd14fa);
+        
+
+        marker_a523634238a64c109c90923aff32ba33.bindPopup(popup_ce24e206ad04492bbb3b7350f037b049)
+        ;
+
+        
+    
+    
+            marker_a523634238a64c109c90923aff32ba33.bindTooltip(
+                `<div>
+                     Saint-Jean
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c07e71ae767e4f65838c1343d28f3e41 = L.marker(
+                [51.49941, -0.12724],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_12addcff085e412fbca006419fa57aa3 = L.popup({"maxWidth": 400});
+
+        
+            var html_dc3ea90d38c84e45a7a791a6075dbddf = $(`<div id="html_dc3ea90d38c84e45a7a791a6075dbddf" style="width: 100.0%; height: 100.0%;">L’époque était à la construction, et les princes rivalisaient sur ce point. Ce qui se faisait à <i style="background-color: yellow;">Westminster</i> était, à Paris, déjà terminé.<br>Après le repas, dont Albizzi s’excusa qu’il fût menu d’ordinaire mais qui était digne d’une table de baron, Guccio se rendit à <i style="background-color: yellow;">Westminster</i>. Il était accompagné d’un valet de la banque, sorte de garde du corps, taillé en buffle, et qui portait le coffret lié à sa ceinture par une chaîne de fer.<br>Isabelle se renfonça un peu dans les coussins. De nouveau, elle se sentait reprise de cette singulière faiblesse qui l’avait saisie à <i style="background-color: yellow;">Westminster</i> en face de Robert. « Est-il donc vrai qu’il m’aime, pensait-elle, ou bien seulement me fait-il compliments comme il en doit faire à toute femme ? » Entre les rideaux de la litière, elle voyait au flanc du cheval pommelé l’immense botte rouge et l’éperon doré ; elle voyait cette cuisse de géant dont les muscles roulaient contre l’arçon de la selle ; et elle se demandait si, chaque fois qu’elle se trouverait en présence de cet homme, elle éprouverait ce même trouble, ce même désir d’abandon… Elle fit effort pour se dominer. Elle n’était point là pour elle-même.</div>`)[0];
+            popup_12addcff085e412fbca006419fa57aa3.setContent(html_dc3ea90d38c84e45a7a791a6075dbddf);
+        
+
+        marker_c07e71ae767e4f65838c1343d28f3e41.bindPopup(popup_12addcff085e412fbca006419fa57aa3)
+        ;
+
+        
+    
+    
+            marker_c07e71ae767e4f65838c1343d28f3e41.bindTooltip(
+                `<div>
+                     Westminster
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3df1234bf41494e821fe8611b0bf663 = L.marker(
+                [51.49941, -0.12724],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_5c3842715f014a13997b49d43d26cf99 = L.popup({"maxWidth": 400});
+
+        
+            var html_2d170deccae44224b660606797411c85 = $(`<div id="html_2d170deccae44224b660606797411c85" style="width: 100.0%; height: 100.0%;">— Vous voyez, Monseigneur… Donc tu te rendras chez Albizzi, et là, avec son aide, tu iras à <i style="background-color: yellow;">Westmoutiers</i> délivrer à la reine, et à elle seule, le message que Monseigneur va écrire. Je te dirai tout à l’heure plus longuement ce que tu devras faire.<br>— Vous irez à <i style="background-color: yellow;">Westmoutiers</i> ce jour d’hui, après dîner, mon cousin, dit-il une fois qu’il eut expédié le secrétaire porteur du billet. Je pense que la reine vous donnera audience. Vous serez pour tous un marchand de pierres précieuses et d’orfèvrerie, venu exprès d’Italie et recommandé par moi. En présentant vos bijoux à la reine, vous pourrez lui remettre votre message.</div>`)[0];
+            popup_5c3842715f014a13997b49d43d26cf99.setContent(html_2d170deccae44224b660606797411c85);
+        
+
+        marker_a3df1234bf41494e821fe8611b0bf663.bindPopup(popup_5c3842715f014a13997b49d43d26cf99)
+        ;
+
+        
+    
+    
+            marker_a3df1234bf41494e821fe8611b0bf663.bindTooltip(
+                `<div>
+                     Westmoutiers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6919e1de88b4345a506d1a07f407838 = L.marker(
+                [50.9505, 1.8764],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_4167332f786f48cab1a227966382a9cb = L.popup({"maxWidth": 400});
+
+        
+            var html_4aae37cec8524488becfd3607581fed4 = $(`<div id="html_4aae37cec8524488becfd3607581fed4" style="width: 100.0%; height: 100.0%;">« Sûrement je vais mourir, se disait Guccio. Comme c’est sot de mourir de la sorte, à mon âge, englouti au milieu de la mer. Jamais je ne reverrai Paris, ni Sienne, ni ma famille, jamais je ne reverrai le soleil. Si seulement j’avais attendu un jour ou deux à <i style="background-color: yellow;">Calais</i> ! Quelle sottise ! Mais si j’en ressors, par la Madone, je reste à Londres, je me fais débardeur, faquin, n’importe quoi, mais jamais je ne repose le pied sur un bateau. »</div>`)[0];
+            popup_4167332f786f48cab1a227966382a9cb.setContent(html_4aae37cec8524488becfd3607581fed4);
+        
+
+        marker_a6919e1de88b4345a506d1a07f407838.bindPopup(popup_4167332f786f48cab1a227966382a9cb)
+        ;
+
+        
+    
+    
+            marker_a6919e1de88b4345a506d1a07f407838.bindTooltip(
+                `<div>
+                     Calais
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d025ed9f79e9490b867268760ff77ac5 = L.marker(
+                [46.93758, 5.87618],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_0ae5bb78bef242b6bbb25e15f698bf37 = L.popup({"maxWidth": 400});
+
+        
+            var html_05f220b4202741d3af9615f364e9d567 = $(`<div id="html_05f220b4202741d3af9615f364e9d567" style="width: 100.0%; height: 100.0%;">— Eh bien ! rassurez Marguerite, et rassurez-vous, Blanche. Mes fils Louis et Charles pourront vous tenir compagnie ce soir. Aujourd’hui est une bonne journée pour le royaume, dit Philippe le Bel. Il n’y aura pas conseil ce soir. Quant à votre époux, Jeanne, qui est allé à Dole et à <i style="background-color: yellow;">Salins</i> veiller aux affaires de votre comté, je ne pense pas qu’il demeure encore absent plus d’une semaine.</div>`)[0];
+            popup_0ae5bb78bef242b6bbb25e15f698bf37.setContent(html_05f220b4202741d3af9615f364e9d567);
+        
+
+        marker_d025ed9f79e9490b867268760ff77ac5.bindPopup(popup_0ae5bb78bef242b6bbb25e15f698bf37)
+        ;
+
+        
+    
+    
+            marker_d025ed9f79e9490b867268760ff77ac5.bindTooltip(
+                `<div>
+                     Salins
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3e0a8310c7a4b1db6a8bed0318cbe0d = L.marker(
+                [41.0092, 28.9597],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_afe1fb95eedd4a99adb1e0a1650bfb58 = L.popup({"maxWidth": 400});
+
+        
+            var html_1d742affce574fb99a99c39d3b93a844 = $(`<div id="html_1d742affce574fb99a99c39d3b93a844" style="width: 100.0%; height: 100.0%;">Né au plus près du trône de France, et ne se consolant pas de ne pas l’occuper, ce prince brouillon s’était employé à courir l’univers pour trouver un autre trône où s’asseoir. Il avait, dans son adolescence, reçu, mais sans pouvoir la garder, la couronne d’Aragon. Puis il avait tenté de reconstituer à son profit le royaume d’Arles. Puis il s’était porté candidat à l’empire d’Allemagne, mais avait échoué assez piteusement à l’élection. Veuf d’une princesse d’Anjou-Sicile, il était, par son remariage avec Catherine de Courtenay, héritière de l’Empire latin d’Orient, devenu empereur de Constantinople, mais empereur titulaire seulement, car un véritable souverain, Andronic II Paléologue, régnait alors à <i style="background-color: yellow;">Byzance</i>. Or même ce sceptre illusoire, par suite d’un second veuvage, venait de lui échapper l’année précédente pour passer à l’un de ses gendres, le prince de Tarente.</div>`)[0];
+            popup_afe1fb95eedd4a99adb1e0a1650bfb58.setContent(html_1d742affce574fb99a99c39d3b93a844);
+        
+
+        marker_f3e0a8310c7a4b1db6a8bed0318cbe0d.bindPopup(popup_afe1fb95eedd4a99adb1e0a1650bfb58)
+        ;
+
+        
+    
+    
+            marker_f3e0a8310c7a4b1db6a8bed0318cbe0d.bindTooltip(
+                `<div>
+                     Byzance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce8d417b7252475ea2017bed251478ef = L.marker(
+                [49.046111, 2.116667],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_17b0fa5f532e4ffd901d54eaaa8da7ff = L.popup({"maxWidth": 400});
+
+        
+            var html_8dd5bac0800c4adebbe7d7634ccdcf1c = $(`<div id="html_8dd5bac0800c4adebbe7d7634ccdcf1c" style="width: 100.0%; height: 100.0%;">Ce jour-là, au cours d’un conseil qui se tenait à <i style="background-color: yellow;">Maubuisson</i>, l’archevêque de Narbonne, Gilles Aycelin, alors garde des Sceaux royaux, s’était refusé, tragiquement, à apposer ceux-ci sur l’ordonnance d’arrestation des Templiers. Philippe le Bel, sans un mot, avait pris les sceaux des mains de l’archevêque pour les mettre devant Nogaret, faisant de ce légiste le second personnage de l’administration royale.<br>— Vois-tu, Lormet, dit le géant, je veux que cette chienne trop grasse entende son malheur de ma propre bouche. Voici un grand moment de plaisir, en ma vie, qui s’approche. Je veux voir la mauvaise gueule de ma tante, lorsque je vais lui conter ce qui se passe à <i style="background-color: yellow;">Maubuisson</i>. Et je veux qu’elle vienne à Pontoise ; et je veux qu’elle aide à sa ruine en allant braire devant le roi, et je veux qu’elle en crève de dépit.<br>— De moi-même, ma tante ; et toute la cour à <i style="background-color: yellow;">Maubuisson</i> en sait autant. Cela s’est passé à la nuit tombée.<br>D’autres passions, d’autres intérêts s’agitaient à <i style="background-color: yellow;">Maubuisson</i>. Les familiers des princesses exilées cherchaient à renouer les fils invisibles de la puissance et de l’intrigue, fût-ce en reniant les amitiés dont la veille ils se paraient. Les navettes de la peur, de la vanité et de l’ambition s’étaient mises en marche pour retisser, sur un nouveau dessin, la toile brutalement déchirée.</div>`)[0];
+            popup_17b0fa5f532e4ffd901d54eaaa8da7ff.setContent(html_8dd5bac0800c4adebbe7d7634ccdcf1c);
+        
+
+        marker_ce8d417b7252475ea2017bed251478ef.bindPopup(popup_17b0fa5f532e4ffd901d54eaaa8da7ff)
+        ;
+
+        
+    
+    
+            marker_ce8d417b7252475ea2017bed251478ef.bindTooltip(
+                `<div>
+                     Maubuisson
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70fce5deecd344659a4eb81d17045da0 = L.marker(
+                [51.5077, -0.1268],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_6c48d2792c024de38129bc5208c322dd = L.popup({"maxWidth": 400});
+
+        
+            var html_387ef225e0044ce994531139de0d56f7 = $(`<div id="html_387ef225e0044ce994531139de0d56f7" style="width: 100.0%; height: 100.0%;">— Guccio, dit Tolomei, tu vas connaître l’Angleterre. Tu partiras demain à l’aube crevant ; tu te rendras à <i style="background-color: yellow;">Londres</i> chez notre cousin Albizzi…<br>« Sûrement je vais mourir, se disait Guccio. Comme c’est sot de mourir de la sorte, à mon âge, englouti au milieu de la mer. Jamais je ne reverrai Paris, ni Sienne, ni ma famille, jamais je ne reverrai le soleil. Si seulement j’avais attendu un jour ou deux à Calais ! Quelle sottise ! Mais si j’en ressors, par la Madone, je reste à <i style="background-color: yellow;">Londres</i>, je me fais débardeur, faquin, n’importe quoi, mais jamais je ne repose le pied sur un bateau. »<br>Il y avait là un homme arrivé de la veille, qui s’appelait Boccacio, ou Boccace, et qui était voyageur pour le compte de la compagnie Bardi. Il venait lui aussi de Paris, et avait assisté avant son départ au supplice de Jacques de Molay ; il avait, de ses oreilles, entendu la malédiction, et il se servait, pour décrire cette tragédie, d’une ironie précise et macabre qui enchanta la tablée italienne. C’était un personnage d’une trentaine d’années au visage intelligent et vif, avec des lèvres minces, et un regard qui semblait s’amuser de tout. Comme il se rendait également à <i style="background-color: yellow;">Londres</i>, Guccio et lui décidèrent de faire chemin ensemble.<br>— Je n’aurais garde de le laisser à <i style="background-color: yellow;">Londres</i> sans moi, répondit Isabelle.</div>`)[0];
+            popup_6c48d2792c024de38129bc5208c322dd.setContent(html_387ef225e0044ce994531139de0d56f7);
+        
+
+        marker_70fce5deecd344659a4eb81d17045da0.bindPopup(popup_6c48d2792c024de38129bc5208c322dd)
+        ;
+
+        
+    
+    
+            marker_70fce5deecd344659a4eb81d17045da0.bindTooltip(
+                `<div>
+                     Londres
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76db717a284d4ff1a5a51df99a4b5ee0 = L.marker(
+                [43.3217, 11.323],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_9efcd6f6e9254f7bba029f3ad555b2cb = L.popup({"maxWidth": 400});
+
+        
+            var html_6c7cf07032af4fd598d1183fb64995fe = $(`<div id="html_6c7cf07032af4fd598d1183fb64995fe" style="width: 100.0%; height: 100.0%;">Enfin, il entoura des deux bras le pied du grand mât et, à genoux dans le noir, cramponné, tremblant, l’estomac malade, les vêtements trempés, il attendit sa fin en promettant des ex-voto à <i style="background-color: yellow;">Santa Maria</i> delle Nevi, à <i style="background-color: yellow;">Santa Maria</i> della Scala, à <i style="background-color: yellow;">Santa Maria</i> dei Servi, à <i style="background-color: yellow;">Santa Maria</i> del Carminé, autant dire à toutes les églises de Sienne qu’il connaissait.<br>Enfin, il entoura des deux bras le pied du grand mât et, à genoux dans le noir, cramponné, tremblant, l’estomac malade, les vêtements trempés, il attendit sa fin en promettant des ex-voto à <i style="background-color: yellow;">Santa Maria</i> delle Nevi, à <i style="background-color: yellow;">Santa Maria</i> della Scala, à <i style="background-color: yellow;">Santa Maria</i> dei Servi, à <i style="background-color: yellow;">Santa Maria</i> del Carminé, autant dire à toutes les églises de Sienne qu’il connaissait.<br>Enfin, il entoura des deux bras le pied du grand mât et, à genoux dans le noir, cramponné, tremblant, l’estomac malade, les vêtements trempés, il attendit sa fin en promettant des ex-voto à <i style="background-color: yellow;">Santa Maria</i> delle Nevi, à <i style="background-color: yellow;">Santa Maria</i> della Scala, à <i style="background-color: yellow;">Santa Maria</i> dei Servi, à <i style="background-color: yellow;">Santa Maria</i> del Carminé, autant dire à toutes les églises de Sienne qu’il connaissait.<br>Enfin, il entoura des deux bras le pied du grand mât et, à genoux dans le noir, cramponné, tremblant, l’estomac malade, les vêtements trempés, il attendit sa fin en promettant des ex-voto à <i style="background-color: yellow;">Santa Maria</i> delle Nevi, à <i style="background-color: yellow;">Santa Maria</i> della Scala, à <i style="background-color: yellow;">Santa Maria</i> dei Servi, à <i style="background-color: yellow;">Santa Maria</i> del Carminé, autant dire à toutes les églises de Sienne qu’il connaissait.</div>`)[0];
+            popup_9efcd6f6e9254f7bba029f3ad555b2cb.setContent(html_6c7cf07032af4fd598d1183fb64995fe);
+        
+
+        marker_76db717a284d4ff1a5a51df99a4b5ee0.bindPopup(popup_9efcd6f6e9254f7bba029f3ad555b2cb)
+        ;
+
+        
+    
+    
+            marker_76db717a284d4ff1a5a51df99a4b5ee0.bindTooltip(
+                `<div>
+                     Santa Maria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60f9c2b7165c4cd792d0589e986af199 = L.marker(
+                [43.3217, 11.323],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_c1c2afb045a84d16922cb92cda8906df = L.popup({"maxWidth": 400});
+
+        
+            var html_d9495a6a7b0d4af3898ae93a98148f78 = $(`<div id="html_d9495a6a7b0d4af3898ae93a98148f78" style="width: 100.0%; height: 100.0%;">Le palais, imposant par ses proportions gigantesques, mais surchargé de fioritures, lui parut d’assez mauvais goût comparé à ce qui se construisait en Toscane, et particulièrement à <i style="background-color: yellow;">Sienne</i>, dans ces années-là. « Ces gens manquent déjà de soleil, et il semble qu’ils fassent tout pour empêcher de passer le peu qu’ils en ont », pensa-t-il.</div>`)[0];
+            popup_c1c2afb045a84d16922cb92cda8906df.setContent(html_d9495a6a7b0d4af3898ae93a98148f78);
+        
+
+        marker_60f9c2b7165c4cd792d0589e986af199.bindPopup(popup_c1c2afb045a84d16922cb92cda8906df)
+        ;
+
+        
+    
+    
+            marker_60f9c2b7165c4cd792d0589e986af199.bindTooltip(
+                `<div>
+                     Sienne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be7b8d1691cf4c088cc86fa6e161087f = L.marker(
+                [43.7732, 11.2564],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_f4b4c462856c42449c41eb92cb8393ca = L.popup({"maxWidth": 400});
+
+        
+            var html_a19b5cf93c57436caa11ac68801459a9 = $(`<div id="html_a19b5cf93c57436caa11ac68801459a9" style="width: 100.0%; height: 100.0%;">En comparaison du pont de Londres, le Ponte Vecchio, à <i style="background-color: yellow;">Florence</i>, ne semblait qu’un jouet, et l’Arno, auprès de la Tamise, qu’un ruisselet. Guccio en fit la remarque à son compagnon.</div>`)[0];
+            popup_f4b4c462856c42449c41eb92cb8393ca.setContent(html_a19b5cf93c57436caa11ac68801459a9);
+        
+
+        marker_be7b8d1691cf4c088cc86fa6e161087f.bindPopup(popup_f4b4c462856c42449c41eb92cb8393ca)
+        ;
+
+        
+    
+    
+            marker_be7b8d1691cf4c088cc86fa6e161087f.bindTooltip(
+                `<div>
+                     Florence
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_713242b9a81f46f1a949c2bc12baf60e = L.marker(
+                [48.8118, 1.9032],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_f16483359d304669b8f999d3c2aac82a = L.popup({"maxWidth": 400});
+
+        
+            var html_a78b767935e44e6483760ea39d03ce94 = $(`<div id="html_a78b767935e44e6483760ea39d03ce94" style="width: 100.0%; height: 100.0%;">Prenant par Pontoise pour bifurquer à travers l’Ile-de-France, Guccio arriva à <i style="background-color: yellow;">Neauphle</i>-le-Vieux le jour de la Saint-Hugues.<br>Il se sentait la tête un peu lourde des boissons du dîner. Il demanda nouvelles de Pierre et Jean de Cressay ; ils étaient partis pour la chasse dès l’aube. Plus hésitant, il s’enquit de Marie. Dame Eliabel répondit que sa fille avait dû se rendre à <i style="background-color: yellow;">Neauphle</i> pour quelques achats de ménage.<br>Guccio se dégagea des empressements de dame Eliabel, en l’assurant qu’il allait s’efforcer d’arranger l’affaire ; mais il lui fallait courir à <i style="background-color: yellow;">Neauphle</i>, et en conférer avec ses commis.<br>Sur la route de Paris, Guccio, galopant, se considérait comme un séducteur irrésistible qui n’avait qu’à paraître dans les châteaux pour y moissonner les cours. L’image de Marie dans le clos des pommiers, auprès de la rivière, ne le quittait pas. Et il se promettait de revenir à <i style="background-color: yellow;">Neauphle</i>, très vite, dans quelques jours peut-être…<br>Guccio accepta de bon cœur cet accueil, et il expliqua sa venue de la façon qu’il avait méditée. Il arrivait à <i style="background-color: yellow;">Neauphle</i> pour remettre en ordre le comptoir qui souffrait d’une mauvaise gestion. Les commis ne faisaient pas rentrer à temps les créances… Aussitôt dame Eliabel s’inquiéta.<br>Le lendemain, Guccio reçut à <i style="background-color: yellow;">Neauphle</i> un message de son oncle où celui-ci lui faisait savoir que le péril était pour l’heure conjuré, et l’invitait à rentrer aussitôt.</div>`)[0];
+            popup_f16483359d304669b8f999d3c2aac82a.setContent(html_a78b767935e44e6483760ea39d03ce94);
+        
+
+        marker_713242b9a81f46f1a949c2bc12baf60e.bindPopup(popup_f16483359d304669b8f999d3c2aac82a)
+        ;
+
+        
+    
+    
+            marker_713242b9a81f46f1a949c2bc12baf60e.bindTooltip(
+                `<div>
+                     Neauphle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd8d22b2ae314a8ca06c58413446a3ec = L.marker(
+                [49.385, 2.4176],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_852a60c3176445f39c1b522a9e74c6d9 = L.popup({"maxWidth": 400});
+
+        
+            var html_bc3f5ce2846c42d2b49fa34fe6f0cf41 = $(`<div id="html_bc3f5ce2846c42d2b49fa34fe6f0cf41" style="width: 100.0%; height: 100.0%;">Celle-ci, débarquée trois jours plus tôt sur le sol de France, faisait route à travers la Picardie. Elle avait quitté Amiens le matin ; si tout allait bien, elle parviendrait à <i style="background-color: yellow;">Clermont</i> en fin d’après-midi. Elle y dormirait et, le lendemain, son escorte d’Angleterre jointe à celle de France, elle se rendrait au château de Maubuisson, près Pontoise, où son père, Philippe le Bel, l’attendait.<br>On le porta ainsi jusqu’à <i style="background-color: yellow;">Clermont</i> où, dans la nuit, il recouvra partiellement l’usage de la parole. Les médecins, aussitôt mandés, l’avaient saigné.</div>`)[0];
+            popup_852a60c3176445f39c1b522a9e74c6d9.setContent(html_bc3f5ce2846c42d2b49fa34fe6f0cf41);
+        
+
+        marker_dd8d22b2ae314a8ca06c58413446a3ec.bindPopup(popup_852a60c3176445f39c1b522a9e74c6d9)
+        ;
+
+        
+    
+    
+            marker_dd8d22b2ae314a8ca06c58413446a3ec.bindTooltip(
+                `<div>
+                     Clermont
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1935f0d67c2d45a994b6ebbfed8befdb = L.marker(
+                [48.848, 2.4389],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_a39d4681db634536a1b9dc25ce259435 = L.popup({"maxWidth": 400});
+
+        
+            var html_36f8bb5e65b445c8a87aca5d223ec9da = $(`<div id="html_36f8bb5e65b445c8a87aca5d223ec9da" style="width: 100.0%; height: 100.0%;">Elles étaient en train de jouer avec des marionnettes ; elles reconstituaient une scène inventée par elles et qui, réglée par un maître jongleur, les avait fort diverties un jour, à <i style="background-color: yellow;">Vincennes</i>, mais dont le roi s’était irrité.</div>`)[0];
+            popup_a39d4681db634536a1b9dc25ce259435.setContent(html_36f8bb5e65b445c8a87aca5d223ec9da);
+        
+
+        marker_1935f0d67c2d45a994b6ebbfed8befdb.bindPopup(popup_a39d4681db634536a1b9dc25ce259435)
+        ;
+
+        
+    
+    
+            marker_1935f0d67c2d45a994b6ebbfed8befdb.bindTooltip(
+                `<div>
+                     Vincennes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de504b28bfce4f5b9480dae256eecd6f = L.marker(
+                [48.9946, 2.1011],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_3aa6c35f5a0d4169af58500319d030d9 = L.popup({"maxWidth": 400});
+
+        
+            var html_2e610e8d115545e88c03d287b75a21e9 = $(`<div id="html_2e610e8d115545e88c03d287b75a21e9" style="width: 100.0%; height: 100.0%;">— Vois-tu, Lormet, dit le géant, je veux que cette chienne trop grasse entende son malheur de ma propre bouche. Voici un grand moment de plaisir, en ma vie, qui s’approche. Je veux voir la mauvaise gueule de ma tante, lorsque je vais lui conter ce qui se passe à Maubuisson. Et je veux qu’elle vienne à <i style="background-color: yellow;">Pontoise</i> ; et je veux qu’elle aide à sa ruine en allant braire devant le roi, et je veux qu’elle en crève de dépit.<br>— Il faut que j’aille à <i style="background-color: yellow;">Pontoise</i> sur l’heure, dit Mahaut sans l’entendre. Il faut que je les voie et leur souffle ce qu’elles doivent répondre.<br>Durant tout le trajet de Paris à <i style="background-color: yellow;">Pontoise</i>, la comtesse Mahaut, dans sa litière, chercha des arguments propres à fléchir le courroux du roi. Mais elle parvenait mal à fixer ses idées. Trop de pensées l’habitaient, trop de craintes, trop de colère aussi contre la folie de ses filles, contre la bêtise de leurs maris, contre l’imprudence de leurs amants, contre tous ceux qui par légèreté, aveuglement ou quête sensuelle, risquaient de ruiner le laborieux édifice de sa puissance. Mère de princesses répudiées, que deviendrait Mahaut ? Elle était bien décidée à noircir autant qu’elle le pourrait la reine de Navarre, et à rejeter sur celle-ci toute la culpabilité. Marguerite n’était pas sa fille. Pour ses propres enfants Mahaut plaiderait l’entraînement, le mauvais exemple…<br>La place du Martroy, à <i style="background-color: yellow;">Pontoise</i>, où allait avoir lieu l’exécution des frères d’Aunay, était emplie par la foule lorsque Béatrice y arriva. Bourgeois, paysans et soldats y affluaient depuis l’aube. Les propriétaires des maisons qui donnaient sur la place avaient loué à bon prix leurs fenêtres de façade, où les têtes se pressaient sur plusieurs rangs.<br>Le peuple de Paris ne mit que huit jours à construire, autour de la condamnation des princesses adultères, une légende de débauche et de cruauté. Imaginations de carrefours et vantardises de boutiques : tel affirmait tenir la vérité, de première bouche, d’un sien compère qui livrait les épices à l’hôtel de Nesle ; tel autre avait un cousin à <i style="background-color: yellow;">Pontoise</i>… L’affabulation populaire s’était surtout emparée de Marguerite de Bourgogne et lui faisait tenir un rôle extravagant. Ce n’était plus un amant qu’on attribuait à la reine de Navarre, mais dix, mais cinquante ; un par soirée… On se montrait, avec force récits et une sorte de fascination craintive, la tour de Nesle devant laquelle des gardes veillaient à présent, de jour et de nuit, afin d’écarter les curiosités. Car l’affaire n’était pas terminée. Plusieurs cadavres avaient été repêchés dans les parages. On affirmait que l’héritier du trône, enfermé dans son hôtel, tourmentait ses serviteurs pour leur faire avouer ce qu’ils savaient de l’inconduite de sa femme, et ensuite expédiait leurs corps à la Seine.</div>`)[0];
+            popup_3aa6c35f5a0d4169af58500319d030d9.setContent(html_2e610e8d115545e88c03d287b75a21e9);
+        
+
+        marker_de504b28bfce4f5b9480dae256eecd6f.bindPopup(popup_3aa6c35f5a0d4169af58500319d030d9)
+        ;
+
+        
+    
+    
+            marker_de504b28bfce4f5b9480dae256eecd6f.bindTooltip(
+                `<div>
+                     Pontoise
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_773512f47679406a9daada29a9582508 = L.marker(
+                [43.9928, 5.0482],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_22d5e60b818f4145b8015d0a7694ffee = L.popup({"maxWidth": 400});
+
+        
+            var html_4c17d8a4d8654f24af425aeecba6a612 = $(`<div id="html_4c17d8a4d8654f24af425aeecba6a612" style="width: 100.0%; height: 100.0%;">— Sire, le pape Clément était chez son neveu, messire de Got, à <i style="background-color: yellow;">Carpentras</i>, quand il fut saisi de fièvres et d’angoisses. Alors il dit qu’il voulait retourner en Guyenne, pour y mourir au lieu de sa naissance, à Villandraut. Mais il ne put aller plus loin que la première étape, et dut se fermer à Roquemaure près Châteauneuf. Ses physiciens ont tout essayé pour le garder en vie, jusques à lui faire manger des émeraudes pilées en poudre, qui sont remède le meilleur, à ce qu’il paraît, pour le mal qu’il avait. Mais rien n’a fait. L’étouffement l’a pris. Les cardinaux étaient autour de lui. Je ne sais rien d’autre.<br>Le siège pontifical était vacant maintenant depuis quatre semaines, et les cardinaux, réunis en conclave à <i style="background-color: yellow;">Carpentras</i> selon les instructions dernières de Clément V, se livraient un combat qui ne paraissait pas près de finir.<br>Les vingt-trois cardinaux assemblés à <i style="background-color: yellow;">Carpentras</i>, et qui venaient de partout, d’Italie, de France, d’Espagne, de Sicile, d’Allemagne, étaient déchirés en presque autant de camps qu’il y avait de chapeaux.</div>`)[0];
+            popup_22d5e60b818f4145b8015d0a7694ffee.setContent(html_4c17d8a4d8654f24af425aeecba6a612);
+        
+
+        marker_773512f47679406a9daada29a9582508.bindPopup(popup_22d5e60b818f4145b8015d0a7694ffee)
+        ;
+
+        
+    
+    
+            marker_773512f47679406a9daada29a9582508.bindTooltip(
+                `<div>
+                     Carpentras
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24a4b3c016374caf86e87ee63e29186a = L.marker(
+                [44.3965, -0.3708],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_c803f718650c41b69dff69d395d1b1bc = L.popup({"maxWidth": 400});
+
+        
+            var html_053d333b2b7f438d88fb193fde5288a7 = $(`<div id="html_053d333b2b7f438d88fb193fde5288a7" style="width: 100.0%; height: 100.0%;">— Sire, le pape Clément était chez son neveu, messire de Got, à Carpentras, quand il fut saisi de fièvres et d’angoisses. Alors il dit qu’il voulait retourner en Guyenne, pour y mourir au lieu de sa naissance, à <i style="background-color: yellow;">Villandraut</i>. Mais il ne put aller plus loin que la première étape, et dut se fermer à Roquemaure près Châteauneuf. Ses physiciens ont tout essayé pour le garder en vie, jusques à lui faire manger des émeraudes pilées en poudre, qui sont remède le meilleur, à ce qu’il paraît, pour le mal qu’il avait. Mais rien n’a fait. L’étouffement l’a pris. Les cardinaux étaient autour de lui. Je ne sais rien d’autre.</div>`)[0];
+            popup_c803f718650c41b69dff69d395d1b1bc.setContent(html_053d333b2b7f438d88fb193fde5288a7);
+        
+
+        marker_24a4b3c016374caf86e87ee63e29186a.bindPopup(popup_c803f718650c41b69dff69d395d1b1bc)
+        ;
+
+        
+    
+    
+            marker_24a4b3c016374caf86e87ee63e29186a.bindTooltip(
+                `<div>
+                     Villandraut
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8605085d34964cbfa0fc651bae82b0df = L.marker(
+                [43.9908, 4.7791],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_577e8ab6e9d34dca828612ba10b634d6 = L.popup({"maxWidth": 400});
+
+        
+            var html_2d2a6e49935348e5a38d9a47059fdc0f = $(`<div id="html_2d2a6e49935348e5a38d9a47059fdc0f" style="width: 100.0%; height: 100.0%;">— Sire, le pape Clément était chez son neveu, messire de Got, à Carpentras, quand il fut saisi de fièvres et d’angoisses. Alors il dit qu’il voulait retourner en Guyenne, pour y mourir au lieu de sa naissance, à Villandraut. Mais il ne put aller plus loin que la première étape, et dut se fermer à <i style="background-color: yellow;">Roquemaure</i> près Châteauneuf. Ses physiciens ont tout essayé pour le garder en vie, jusques à lui faire manger des émeraudes pilées en poudre, qui sont remède le meilleur, à ce qu’il paraît, pour le mal qu’il avait. Mais rien n’a fait. L’étouffement l’a pris. Les cardinaux étaient autour de lui. Je ne sais rien d’autre.</div>`)[0];
+            popup_577e8ab6e9d34dca828612ba10b634d6.setContent(html_2d2a6e49935348e5a38d9a47059fdc0f);
+        
+
+        marker_8605085d34964cbfa0fc651bae82b0df.bindPopup(popup_577e8ab6e9d34dca828612ba10b634d6)
+        ;
+
+        
+    
+    
+            marker_8605085d34964cbfa0fc651bae82b0df.bindTooltip(
+                `<div>
+                     Roquemaure
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09f400eadd6d44fd8f4f070dea27b62b = L.marker(
+                [41.8245, 12.486],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_06ef967c603c4c1592601a99c8ba5205 = L.popup({"maxWidth": 400});
+
+        
+            var html_22edbc6212d7479e929d01d2e4eea0c3 = $(`<div id="html_22edbc6212d7479e929d01d2e4eea0c3" style="width: 100.0%; height: 100.0%;">— Ces huit cardinaux italiens, dit Marigny, ne sont accordés que dans leur volonté de ramener à <i style="background-color: yellow;">Rome</i> la papauté. Par bonheur, ils ne le sont sur le nom d’aucun papable.<br>— <i style="background-color: yellow;">Rome</i> est la ville du pape pour tous les chrétiens, dit Charles de Valois. Le centre du monde est à <i style="background-color: yellow;">Rome</i>.<br>— Mais quand le pape veut se tenir à <i style="background-color: yellow;">Rome</i>, il ne peut y rester ! s’écria Marigny. Il est forcé de fuir devant les factions qui déchirent la ville, et doit s’aller réfugier dans quelque château sous la protection de troupes qui ne lui appartiennent point. Il se trouve beaucoup mieux veillé par notre bonne forteresse de Villeneuve, de l’autre côté du Rhône.<br>La raison du vieux pape n’avait pas résisté à l’attentat et à l’outrage. Tandis qu’on le ramenait à <i style="background-color: yellow;">Rome</i>, Boniface continuait de pleurer comme un enfant. Puis il était tombé dans une démence furieuse, insultant quiconque l’approchait, et se traînant à quatre pattes dans la chambre où on le gardait. Un mois plus tard il mourait en repoussant, dans une crise de rage, les derniers sacrements…</div>`)[0];
+            popup_06ef967c603c4c1592601a99c8ba5205.setContent(html_22edbc6212d7479e929d01d2e4eea0c3);
+        
+
+        marker_09f400eadd6d44fd8f4f070dea27b62b.bindPopup(popup_06ef967c603c4c1592601a99c8ba5205)
+        ;
+
+        
+    
+    
+            marker_09f400eadd6d44fd8f4f070dea27b62b.bindTooltip(
+                `<div>
+                     Rome
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_144beb9201fd44cd9b2be04e275ee2d2 = L.marker(
+                [50.5239, 3.186],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_280f803b755b4b448d1b2acf16fb0238 = L.popup({"maxWidth": 400});
+
+        
+            var html_2b0e8665434a4cda8ab4f4d8c4959263 = $(`<div id="html_2b0e8665434a4cda8ab4f4d8c4959263" style="width: 100.0%; height: 100.0%;">Il rappelait par là une troublante constatation faite à propos des années 14, au cours des âges : 714, invasion des musulmans d’Espagne ; 814, mort de Charlemagne et déchirement de son empire ; 914, invasion des Hongrois, accompagnée de la grande famine ; 1114, perte de la Bretagne ; 1214, la coalition d’Othon IV, vaincue de justesse à <i style="background-color: yellow;">Bouvines</i>… une victoire au bord de la catastrophe. Seule, Tannée 1014 manquait à l’appel des drames.</div>`)[0];
+            popup_280f803b755b4b448d1b2acf16fb0238.setContent(html_2b0e8665434a4cda8ab4f4d8c4959263);
+        
+
+        marker_144beb9201fd44cd9b2be04e275ee2d2.bindPopup(popup_280f803b755b4b448d1b2acf16fb0238)
+        ;
+
+        
+    
+    
+            marker_144beb9201fd44cd9b2be04e275ee2d2.bindTooltip(
+                `<div>
+                     Bouvines
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ce8621816da4a17831a22372380ded5 = L.marker(
+                [48.874, 2.3694],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_9d5b634e54534d8b949909252f431d47 = L.popup({"maxWidth": 400});
+
+        
+            var html_ab26bc87abd948ab95e1ce30569963a5 = $(`<div id="html_ab26bc87abd948ab95e1ce30569963a5" style="width: 100.0%; height: 100.0%;">— Alors, nous nous balancerons ensemble à <i style="background-color: yellow;">Montfaucon</i>, comme deux larrons, répondit Tolomei froidement. Mais je ne me balancerai pas seul…</div>`)[0];
+            popup_9d5b634e54534d8b949909252f431d47.setContent(html_ab26bc87abd948ab95e1ce30569963a5);
+        
+
+        marker_1ce8621816da4a17831a22372380ded5.bindPopup(popup_9d5b634e54534d8b949909252f431d47)
+        ;
+
+        
+    
+    
+            marker_1ce8621816da4a17831a22372380ded5.bindTooltip(
+                `<div>
+                     Montfaucon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65898f4e86ed4439b8f111ac23faf3f8 = L.marker(
+                [48.3526, 2.7026],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_e609434afe9e4a41914e41a4421eb165 = L.popup({"maxWidth": 400});
+
+        
+            var html_18c83b8cafdc4a28afeb6c63ee98933f = $(`<div id="html_18c83b8cafdc4a28afeb6c63ee98933f" style="width: 100.0%; height: 100.0%;">À l’aube, il demanda en bégayant d’être conduit à <i style="background-color: yellow;">Fontainebleau</i>, où il était né. Le pape Clément V lui aussi, se sentant mourir, avait voulu revenir vers le lieu de sa naissance.</div>`)[0];
+            popup_e609434afe9e4a41914e41a4421eb165.setContent(html_18c83b8cafdc4a28afeb6c63ee98933f);
+        
+
+        marker_65898f4e86ed4439b8f111ac23faf3f8.bindPopup(popup_e609434afe9e4a41914e41a4421eb165)
+        ;
+
+        
+    
+    
+            marker_65898f4e86ed4439b8f111ac23faf3f8.bindTooltip(
+                `<div>
+                     Fontainebleau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ad8b3382d0748358a2ff5498201000d = L.marker(
+                [48.8719, 2.4857],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_8cc4759fd742478cb455fe16ffd857c0 = L.popup({"maxWidth": 400});
+
+        
+            var html_65ce44b53ffc496d985cab46dc74496f = $(`<div id="html_65ce44b53ffc496d985cab46dc74496f" style="width: 100.0%; height: 100.0%;">On arriva ainsi au confluent de la Seine et, de là, jusqu’à <i style="background-color: yellow;">Poissy</i>. Le roi fut porté au château.<br>— À vos sœurs de saint Dominique, à <i style="background-color: yellow;">Poissy</i>, je lègue la grande croix des Templiers. Et mon cœur aussi y sera porté.</div>`)[0];
+            popup_8cc4759fd742478cb455fe16ffd857c0.setContent(html_65ce44b53ffc496d985cab46dc74496f);
+        
+
+        marker_0ad8b3382d0748358a2ff5498201000d.bindPopup(popup_8cc4759fd742478cb455fe16ffd857c0)
+        ;
+
+        
+    
+    
+            marker_0ad8b3382d0748358a2ff5498201000d.bindTooltip(
+                `<div>
+                     Poissy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5d005975d2144f2821e8b70d6a51146 = L.marker(
+                [48.932, 2.3597],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_81d351af3e1147b3bb8f3136d4eb674b = L.popup({"maxWidth": 400});
+
+        
+            var html_65377299a78f45ab821ea43fb6f811a1 = $(`<div id="html_65377299a78f45ab821ea43fb6f811a1" style="width: 100.0%; height: 100.0%;">Il continua en léguant à diverses églises, à Notre-Dame de Boulogne, parce que sa fille s’y était mariée, à Saint-Martin de Tours, à <i style="background-color: yellow;">Saint-Denis</i>, des fleurs de lis d’or, « d’un prix de mille livres », précisa-t-il pour chacune.</div>`)[0];
+            popup_81d351af3e1147b3bb8f3136d4eb674b.setContent(html_65377299a78f45ab821ea43fb6f811a1);
+        
+
+        marker_c5d005975d2144f2821e8b70d6a51146.bindPopup(popup_81d351af3e1147b3bb8f3136d4eb674b)
+        ;
+
+        
+    
+    
+            marker_c5d005975d2144f2821e8b70d6a51146.bindTooltip(
+                `<div>
+                     Saint-Denis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c5f4e5729de4d8baa85664b4a25ef14 = L.marker(
+                [48.8118, 1.9032],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_3a245164041d40958634f2603a5ad7aa = L.popup({"maxWidth": 400});
+
+        
+            var html_b8b86434f66a4d86a89ef3bfd7e7b5cb = $(`<div id="html_b8b86434f66a4d86a89ef3bfd7e7b5cb" style="width: 100.0%; height: 100.0%;">— Mon oncle, mon oncle, dit vivement Guccio, j’ai une idée. Plutôt que de loger au comptoir, je pourrais aller à <i style="background-color: yellow;">Cressay</i> dont les châtelains restent nos obligés. Je leur ai naguère été fort secourable, et nous avons toujours créance sur eux. J’imagine que la fille, si les choses n’ont point changé, ne refusera pas de m’aider.<br>Comme son oncle, dans le message, ne lui parlait point des documents cachés, Guccio feignit de comprendre qu’il devait les laisser à <i style="background-color: yellow;">Cressay</i>. Il ménageait ainsi le prétexte à un retour.</div>`)[0];
+            popup_3a245164041d40958634f2603a5ad7aa.setContent(html_b8b86434f66a4d86a89ef3bfd7e7b5cb);
+        
+
+        marker_6c5f4e5729de4d8baa85664b4a25ef14.bindPopup(popup_3a245164041d40958634f2603a5ad7aa)
+        ;
+
+        
+    
+    
+            marker_6c5f4e5729de4d8baa85664b4a25ef14.bindTooltip(
+                `<div>
+                     Cressay
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d26c96d2d7ed42319e3736bf73cd6066 = L.marker(
+                [48.4638, 2.2659],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_af746a6aa91d4ccd9f488578d06c4653 = L.popup({"maxWidth": 400});
+
+        
+            var html_8cf7335109e742e9858616db921f7c51 = $(`<div id="html_8cf7335109e742e9858616db921f7c51" style="width: 100.0%; height: 100.0%;">Il demeura là une dizaine de jours, au bout desquels il parut un peu rétabli. La parole lui était revenue. Il pouvait se tenir debout, avec des gestes encore gourds. Il insista pour continuer vers Fontainebleau, et, faisant un grand effort de volonté, il exigea qu’on le mît à cheval. Il alla de la sorte, prudemment, jusqu’à <i style="background-color: yellow;">Essonne</i> ; mais là, il dut abandonner ; le corps n’obéissait plus au vouloir.</div>`)[0];
+            popup_af746a6aa91d4ccd9f488578d06c4653.setContent(html_8cf7335109e742e9858616db921f7c51);
+        
+
+        marker_d26c96d2d7ed42319e3736bf73cd6066.bindPopup(popup_af746a6aa91d4ccd9f488578d06c4653)
+        ;
+
+        
+    
+    
+            marker_d26c96d2d7ed42319e3736bf73cd6066.bindTooltip(
+                `<div>
+                     Essonne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83ab8182567d4a3d8397019adf176e18 = L.marker(
+                [47.3894, 0.6827],
+                {}
+            ).addTo(marker_cluster_2b3ffafc22e24f5cb716ee7d11c97513);
+        
+    
+        var popup_63222f44ef784f37b1f215c71370ffb2 = L.popup({"maxWidth": 400});
+
+        
+            var html_5760d7f65b314f73a89bcd4d35d03928 = $(`<div id="html_5760d7f65b314f73a89bcd4d35d03928" style="width: 100.0%; height: 100.0%;">Il continua en léguant à diverses églises, à Notre-Dame de Boulogne, parce que sa fille s’y était mariée, à <i style="background-color: yellow;">Saint-Martin</i> de Tours, à Saint-Denis, des fleurs de lis d’or, « d’un prix de mille livres », précisa-t-il pour chacune.</div>`)[0];
+            popup_63222f44ef784f37b1f215c71370ffb2.setContent(html_5760d7f65b314f73a89bcd4d35d03928);
+        
+
+        marker_83ab8182567d4a3d8397019adf176e18.bindPopup(popup_63222f44ef784f37b1f215c71370ffb2)
+        ;
+
+        
+    
+    
+            marker_83ab8182567d4a3d8397019adf176e18.bindTooltip(
+                `<div>
+                     Saint-Martin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
